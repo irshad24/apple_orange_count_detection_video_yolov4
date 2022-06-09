@@ -22,7 +22,7 @@ If you want to use yolov4-tiny.weights, a smaller model that is faster at runnin
 
 ## YOLOv4 Using Tensorflow (tf, .pb model)
 To implement YOLOv4 using TensorFlow, first we convert the .weights into the corresponding TensorFlow model files and then run the model.
-```bash
+
 # Convert darknet weights to tensorflow
 # yolov4-tiny
 python save_model.py --weights ./data/yolov4-tiny.weights --output ./checkpoints/yolov4-tiny-416 --input_size 416 --model yolov4 --tiny
@@ -30,16 +30,16 @@ python save_model.py --weights ./data/yolov4-tiny.weights --output ./checkpoints
 
 
 # Run yolov4 on video
-python detect_video.py --weights ./checkpoints/yolov4-416 --size 416 --model yolov4 --video ./data/video/video.mp4 --output ./detections/results.avi
+python detect_video.py --weights ./checkpoints/yolov4-416 --size 416 --model yolov4 --video ./data/video/apple.mp4 --output ./detections/results.avi
 
 
 # Count the number of apples and oranges in a video
-python detect_video.py --weights ./checkpoints/yolov4-416 --size 416 --model yolov4 --video ./data/video/video.mp4 --count
+python detect_video.py --weights ./checkpoints/yolov4-416 --size 416 --model yolov4 --video ./data/video/apple.mp4 --count
 
 ### Result Video
 Video saves wherever you point --output flag to. If you don't set the flag then your video will not be saved with detections on it.
-<p align="center"><img src="data/helpers/output1"\></p>
-<p align="center"><img src="data/helpers/output2"\></p>
+<p align="center"><img src="data/helpers/output1.png"\></p>
+<p align="center"><img src="data/helpers/output2.png"\></p>
 
 
 ## Command Line Args Reference
