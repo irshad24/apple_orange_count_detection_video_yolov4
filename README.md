@@ -5,8 +5,8 @@
 
 
 # Tensorflow GPU
-conda env create -f conda-gpu1.yml
-conda activate yolov4-gpu1
+conda env create -f conda-gpu.yml ,
+conda activate yolov4-gpu
 
 
 
