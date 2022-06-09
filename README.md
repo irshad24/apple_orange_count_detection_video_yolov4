@@ -7,7 +7,7 @@
 # Tensorflow GPU
 conda env create -f conda-gpu.yml
 conda activate yolov4-gpu
-```
+
 
 
 ## Downloading Official Pre-trained Weights
